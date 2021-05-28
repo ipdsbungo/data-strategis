@@ -1,38 +1,142 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <meta charset="utf-8">
+    <!--  This file has been downloaded from bootdey.com    @bootdey on twitter -->
+    <!--  All snippets are MIT license http://bootdey.com/license -->
+    <title>Data Strategis Bungo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
+        body {
+            margin-top: 20px;
+            background: #FAFAFA;
+        }
+        
+        .order-card {
+            color: #fff;
+        }
+        
+        .bg-c-blue {
+            background: linear-gradient(45deg, #4099ff, #73b4ff);
+        }
+        
+        .bg-c-green {
+            background: linear-gradient(45deg, #2ed8b6, #59e0c5);
+        }
+        
+        .bg-c-yellow {
+            background: linear-gradient(45deg, #FFB64D, #ffcb80);
+        }
+        
+        .bg-c-pink {
+            background: linear-gradient(45deg, #FF5370, #ff869a);
+        }
+        
+        .ava {
+            background: linear-gradient(45deg, #181717, #757071);
+        }
+        
         .card {
-            min-width: 100px !important;
+            height: 120px;
+            min-width: 400px;
+            border-radius: 5px;
+            -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+            box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+            border: none;
+            margin-bottom: 15px;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .card .card-block {
+            /* padding: 20px; */
+            font-size: 1em;
+            position: relative;
+            margin: 0;
+            padding: 1em;
+            border: none;
+            border-top: 1px solid rgba(34, 36, 38, .1);
+            box-shadow: none;
+        }
+        
+        .order-card i {
+            font-size: 36px;
+        }
+        
+        .f-left {
+            float: left;
+            size: 100px;
+        }
+        
+        .f-right {
+            float: right;
+        }
+        
+        .f-center {
+            float: right;
         }
     </style>
-    <title>Document</title>
 </head>
 
 <body>
-    <div class="container py-3">
-        <div class="card">
-            <div class="row">
-                <div class="col-md-2">
-                    <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" class="w-100">
+    <!-- Search Box -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- <h2>Data Strategis Kabupaten Bungo</h2> -->
+    <div class="navbar">
+        <div class="input-group mb-3"> <input type="text" class="form-control" placeholder="Cari data strategis...">
+            <div class="input-group-append"><button class="btn btn-primary"><i class="fa fa-search"></i></button></div>
+        </div>
+    </div>
+    <!-- Container -->
+    <div class="container">
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-blue order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Jumlah Penduduk</h6>
+                    <h2 class="text-right"><i class="fa fa-users f-left lg"></i><span>362.363</span></h2>
+                    <p class="m-b-0"><span class="f-right">Jiwa</span></p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card-block px-3">
-                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                        <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
-                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-green order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">PDRB Atas Dasar Harga Berlaku Menurut Pengeluaran</h6>
+                    <h2 class="text-right"><i class="fas fa-chart-pie f-left"></i></i><span>12.507.630,00</span></h2>
+                    <p class="m-b-0"><span class="f-right">Juta Rupiah</span></p>
+                    <!-- <a href="#" class="f-center">Selengkapnya</a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-yellow order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Persentase Penduduk Miskin</h6>
+                    <h2 class="text-right">
+                        <i class="fas fa-wallet f-left"></i><span>5.80</span></h2>
+                    <p class="m-b-0"><span class="f-right">Persen</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-xl-3">
+            <div class="card bg-c-pink order-card">
+                <div class="card-block">
+                    <h6 class="m-b-20">Indeks Pembangunan Manusia (IPM)</h6>
+                    <h2 class="text-right"><i class="fas fa-user-cog f-left"></i><span>69,92</span></h2>
+                    <p class="m-b-0"><span class="f-right"></span></p>
                 </div>
             </div>
         </div>
     </div>
     </div>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    </script>
 </body>
 
 </html>
